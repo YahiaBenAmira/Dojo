@@ -1,0 +1,30 @@
+/* src/RichTextEditor.css */
+.RichTextEditor .ql-toolbar {
+    background-color: white;
+}
+
+.RichTextEditor .ql-container.ql-snow {
+    border: 1px solid #ccc;
+}
+
+.RichTextEditor .ql-editor::before {
+    color: white; /* Placeholder color */
+    opacity: 1; /* Ensure the placeholder is visible */
+}
+
+.RichTextEditor .ql-editor {
+    color: white; /* Text color */
+}
+
+/* Additional styles to handle text and toolbar formatting */
+.RichTextEditor .ql-editor.ql-blank::before {
+    font-style: normal;
+    left: 0px;
+}
+
+/* Optional: Adjust placeholder font size and position */
+.RichTextEditor .ql-editor.ql-blank::before {
+    font-size: 14px;
+    left: 10px;
+    top: 10px;
+}

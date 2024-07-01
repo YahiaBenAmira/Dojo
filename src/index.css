@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* index.css */
+/* index.css */
+.gradient-bg {
+  background: radial-gradient(circle at top left, #195cee, transparent 50%),
+    radial-gradient(circle at top right, #1fbaee, transparent 50%),
+    radial-gradient(circle at bottom left, #9318eb, transparent 50%),
+    radial-gradient(circle at bottom right, #ff69b4, transparent 50%);
+  height: 100vh; /* Ensure it covers the full height of the viewport */
+  width: 100vw; /* Ensure it covers the full width of the viewport */
+}
+
+/* styles.css or inline styles
+  /* styles.css or inline styles */
+*/ .droppable-area {
+  padding: 16px;
+  min-height: 200px; /* Ensure a minimum height for the drop area */
+  border: 2px dashed transparent; /* Add a dashed border that will be visible on hover */
+  transition: border-color 0.3s ease;
+}
+
+.droppable-area.over {
+  border-color: #007bff; /* Highlight border when an item is over */
+}
+
+.task-item {
+  margin-bottom: 8px;
+  padding: 8px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+  background-color: #e0e0e0;
+}
+
+.button-container {
+  position: fixed;
+  left: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-container.open {
+  z-index: 100;
+  border-radius: 10px;
+  transform: translateX(15rem);
+  background-color: #e0e0e0;
+  box-shadow: 0 0 10px rgba(252, 252, 252, 0.5);
+}
+
+.open-div-bg {
+  background-color: #282e33;
+  fill: #b6c2cf;
+}
